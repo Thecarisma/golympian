@@ -10,7 +10,7 @@ import com.bumptech.glide.Glide;
 
 import java.text.DecimalFormat;
 
-import misc.ZeusMath;
+import gig.library.golympian.misc.ZeusMath;
 
 /**
  *
