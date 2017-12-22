@@ -18,6 +18,7 @@
 
     <!-- REDS -->
     <color name="colorGolympianRed">#ff0505</color>
+    <color name="colorGolympianRedDark">#cc0404</color>
 
     <!-- BLUES -->
     <color name="colorGolympianBlue">#25a2ea</color>
