@@ -1,6 +1,26 @@
 # goandroid
 Useful library for android development generally. Simplify your project with this multi functional library
 
+***
+### [THEME](https://github.com/golympian/goandroid/wiki/Adding-Theme-And-Finetuning-Your-Android-application)
+
+***
+
+the library support various theme tha can be accessed through the Theme class in the utilities package to set the theme in your application 
+```java
+Theme.setTheme(activity, Theme.Themes.REDFIRE);
+```
+or if you initialize the theme class
+```java
+Theme theme = new Theme(activity);
+theme.setTheme(Theme.Themes.REDFIRE);
+```
+The screen shots of the first eight themes are shown below
+
+![themes_screenshots](https://github.com/golympian/goandroid/blob/master/images/themes.png)
+
+[read more about themes](https://github.com/golympian/goandroid/wiki/Adding-Theme-And-Finetuning-Your-Android-application)
+
 MIT License
 -------
 
