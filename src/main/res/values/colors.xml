@@ -14,16 +14,23 @@
 
     <!-- GREENS-->
     <color name="colorGolympianGreen">#02bc02</color>
+    <color name="colorGolympianGreenLight">#21f921</color>
     <color name="colorGolympianGreenDark">#0d760d</color>
 
     <!-- REDS -->
-    <color name="colorGolympianRed">#ff0505</color>
-    <color name="colorGolympianRedDark">#cc0404</color>
+    <color name="colorGolympianRed">#fd2727</color>
+    <color name="colorGolympianRedLight">#f78282</color>
+    <color name="colorGolympianRedDark">#e90404</color>
 
     <!-- BLUES -->
-    <color name="colorGolympianBlue">#25a2ea</color>
+    <color name="colorGolympianBlue">#50a3cf</color>
+    <color name="colorGolympianBlueLight">#30aef7</color>
+    <color name="colorGolympianBlueDark">#397ab9</color>
+    <color name="colorGolympianAquaBlue">#2e64f7</color>
 
     <!-- YELLOWS -->
     <color name="colorGolympianYellow">#eaff05</color>
+    <color name="colorGolympianYellowLight">#f5ff8b</color>
+    <color name="colorGolympianYellowDark">#ced10c</color>
 
 </resources>

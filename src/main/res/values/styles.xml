@@ -3,20 +3,19 @@
     <!-- Base application theme. -->
     <attr format="color" name="layoutBackground"/>
     <attr format="color" name="meterColor"/>
-    <attr format="color" name="textColor"/>
     <attr format="color" name="buttonTextColor"/>
     <attr format="color" name="notifyGreen"/>
     <attr format="color" name="notifyRed"/>
 
-    <style name="ZeusAppTheme" parent="Theme.AppCompat">
+    <style name="HeraTheme" parent="Theme.AppCompat">
 
         <item name="android:windowBackground">@color/colorGolympianWhite</item>
         <item name="colorPrimary">@color/colorGolympianPrimary</item>
         <item name="colorPrimaryDark">@color/colorGolympianPrimaryDark</item>
         <item name="android:typeface">serif</item>
+        <item name="android:textViewStyle">@style/ColorDefault</item>
         <item name="android:spinnerDropDownItemStyle">@style/DefaultSpinnerItemStyle</item>
         <item name="layoutBackground">@color/colorGolympianWhite</item>
-        <item name="textColor">@color/colorGolympianBlack</item>
         <item name="buttonTextColor">@color/colorGolympianWhite</item>
         <item name="meterColor">@color/colorGolympianGreenDark</item>
         <item name="notifyGreen">@color/colorGolympianGreen</item>
@@ -50,40 +49,14 @@
         <item name="background">@null</item>
     </style>
 
-    <!-- for menu items -->
-    <style name="TextColorGrey">
-        <item name="android:textColor">@color/colorGolympianGrey</item>
-        <item name="android:textSize">12sp</item>
-    </style>
-
-    <style name="TextColorGreen">
-        <item name="android:textColor">@color/colorGolympianGreen</item>
-        <item name="android:textSize">12sp</item>
-    </style>
-
-    <style name="TextColorBlue">
-        <item name="android:textColor">@color/colorGolympianBlue</item>
-        <item name="android:textSize">12sp</item>
-    </style>
-
-    <style name="TextColorRed">
-        <item name="android:textColor">@color/colorGolympianRed</item>
-        <item name="android:textSize">12sp</item>
-    </style>
-
-    <style name="TextColorYellow">
-        <item name="android:textColor">@color/colorGolympianYellow</item>
-        <item name="android:textSize">12sp</item>
-    </style>
-
-    <style name="TextColorWhite">
-        <item name="android:textColor">@color/colorGolympianWhite</item>
-        <item name="android:textSize">12sp</item>
-    </style>
-
-    <style name="TextColorBlack">
-        <item name="android:textColor">@color/colorGolympianBlack</item>
-        <item name="android:textSize">12sp</item>
-    </style>
+    <!-- style colors -->
+    <style name="ColorGrey"> <item name="android:textColor">@color/colorGolympianGrey</item> </style>
+    <style name="ColorDefault"> <item name="android:textColor">@color/colorGolympianGreyDark</item> </style>
+    <style name="ColorGreen"> <item name="android:textColor">@color/colorGolympianGreen</item> </style>
+    <style name="ColorBlue"> <item name="android:textColor">@color/colorGolympianBlue</item> </style>
+    <style name="ColorRed"> <item name="android:textColor">@color/colorGolympianRed</item> </style>
+    <style name="ColorYellow"> <item name="android:textColor">@color/colorGolympianYellow</item> </style>
+    <style name="ColorWhite"> <item name="android:textColor">@color/colorGolympianWhite</item> </style>
+    <style name="ColorBlack"> <item name="android:textColor">@color/colorGolympianBlack</item> </style>
 
 </resources>

@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="RedFire" parent="HeraTheme">
+        <item name="colorPrimary">@color/colorGolympianRedLight</item>
+        <item name="colorPrimaryDark">@color/colorGolympianRed</item>
+    </style>
 
+    <style name="Nature" parent="HeraTheme">
+        <item name="colorPrimary">@color/colorGolympianGreenLight</item>
+        <item name="colorPrimaryDark">@color/colorGolympianGreen</item>
+    </style>
+
+    <style name="GreenLife" parent="HeraTheme">
+        <item name="colorPrimary">@color/colorGolympianGreen</item>
+        <item name="colorPrimaryDark">@color/colorGolympianGreenDark</item>
+    </style>
+
+    <style name="SkyBlue" parent="HeraTheme">
+        <item name="colorPrimary">@color/colorGolympianBlueLight</item>
+        <item name="colorPrimaryDark">@color/colorGolympianBlueLight</item>
+    </style>
+
+    <style name="CoolBlue" parent="HeraTheme">
+        <item name="colorPrimary">@color/colorGolympianBlue</item>
+        <item name="colorPrimaryDark">@color/colorGolympianBlueDark</item>
+    </style>
+
+    <style name="AquaMarine" parent="HeraTheme">
+        <item name="colorPrimary">@color/colorGolympianBlue</item>
+        <item name="colorPrimaryDark">@color/colorGolympianAquaBlue</item>
+    </style>
+
+    <style name="Butter" parent="HeraTheme">
+        <item name="colorPrimary">@color/colorGolympianYellow</item>
+        <item name="colorPrimaryDark">@color/colorGolympianYellowDark</item>
+    </style>
 
 </resources>

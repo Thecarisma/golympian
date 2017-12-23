@@ -38,7 +38,7 @@ public class MenuTune {
      */
     public static void setMenuItemColor(Context context, MenuItem menuItem) {
         SpannableString s = new SpannableString(menuItem.getTitle());
-        s.setSpan(new TextAppearanceSpan(context, R.style.TextColorGrey), 0, s.length(), 0);
+        s.setSpan(new TextAppearanceSpan(context, R.style.ColorGrey), 0, s.length(), 0);
         menuItem.setTitle(s);
     }
 
@@ -64,7 +64,7 @@ public class MenuTune {
      */
     public static void setMenuItemColor(Context context, MenuItem menuItem, MenuItemTextSize size) {
         SpannableString s = new SpannableString(menuItem.getTitle());
-        s.setSpan(new TextAppearanceSpan(context, R.style.TextColorGrey), 0, s.length(), 0);
+        s.setSpan(new TextAppearanceSpan(context, R.style.ColorGrey), 0, s.length(), 0);
         s.setSpan(new RelativeSizeSpan(size.ordinal()), 0, s.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         menuItem.setTitle(s);
     }
@@ -138,19 +138,19 @@ public class MenuTune {
 
     public static int getMenuItemColor(MenuItemColor color) {
         if (color == MenuItemColor.GREEN) {
-            return R.style.TextColorGreen ;
+            return R.style.ColorGreen ;
         } else if (color == MenuItemColor.RED) {
-            return R.style.TextColorRed ;
+            return R.style.ColorRed ;
         } else if (color == MenuItemColor.BLUE) {
-            return R.style.TextColorBlue ;
+            return R.style.ColorBlue ;
         } else if (color == MenuItemColor.YELLOW) {
-            return R.style.TextColorYellow ;
+            return R.style.ColorYellow ;
         } else if (color == MenuItemColor.WHITE) {
-            return R.style.TextColorWhite ;
+            return R.style.ColorWhite ;
         } else if (color == MenuItemColor.BLACK) {
-            return R.style.TextColorBlack ;
+            return R.style.ColorBlack ;
         } else {
-            return R.style.TextColorGrey ;
+            return R.style.ColorGrey ;
         }
     }
 

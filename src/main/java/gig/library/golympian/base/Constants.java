@@ -14,6 +14,28 @@ public class Constants {
     Context context ;
 
     /**
+     * Boolean constants
+     */
+    public static boolean LOGERROR = true ;
+    public static boolean TOASTERROR = true ;
+
+    /**
+     * String constants : tag
+     */
+    String DEFAULTTAG = "GIG.LIBRARY.GOLYMPIAN" ;
+    public String USERDEVICETAG = "GOLYMPIAN.USERDEVICE" ;
+    public String VIEWETAG = "GOLYMPIAN.VIEW" ;
+    public String UTILITYETAG = "GOLYMPIAN.UTILITIES" ;
+
+    /**
+     * String constants : shared preference
+     */
+    public String LANGUAGEPREFERENCE = "LANGUAGEPREFERENCE" ;
+    public String LANGUAGE = "LANGUAGE" ;
+    public String FONT = "FONT" ;
+    public String THEME = "THEME" ;
+
+    /**
      * constant base initializer with context
      * @param context
      */
@@ -27,18 +49,6 @@ public class Constants {
     public Constants() {
 
     }
-
-    /**
-     * Boolean constants
-     */
-    public static boolean LOGERROR = true ;
-    public static boolean TOASTERROR = true ;
-
-    /**
-     * String constants
-     */
-    String DEFAULTTAG = "GIG.LIBRARY.GOLYMPIAN" ;
-    public String USERDEVICETAG = "GOLYMPIAN.USERDEVICE" ;
 
     /**
      * this basically treat exception to either loging or throwing it depends on the
