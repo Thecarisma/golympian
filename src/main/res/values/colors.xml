@@ -5,7 +5,11 @@
     <color name="colorGolympianAccent">#ff05f7</color>
     <color name="colorGolympianBlack">#000000</color>
     <color name="colorGolympianWhite">#ffffff</color>
+
+    <!-- TRANSPARENT -->
     <color name="colorGolympianTransparent">#00ffffff</color>
+    <color name="colorGolympianSemiTransparent">#b7f5f4f4</color>
+    <color name="colorGolympianDemiTransparent">#d7ffffff</color>
 
     <!-- GREYS-->
     <color name="colorGolympianGrey">#878987</color>

@@ -20,7 +20,8 @@ public class Theme {
      * the currently supported themes
      */
     public enum Themes {
-        HERATHEME, REDFIRE, NATURE, GREENLIFE, SKYBLUE, COOLBLUE, AQUAMARINE, BUTTER
+        HERATHEME, REDFIRE, NATURE, GREENLIFE, SKYBLUE, COOLBLUE, AQUAMARINE, BUTTER, DARK,
+        NIGHTWALKER
     }
 
     /**
@@ -100,6 +101,10 @@ public class Theme {
             return Themes.AQUAMARINE ;
         } else if (id == R.style.Butter ) {
             return Themes.BUTTER ;
+        } else if (id == R.style.Dark ) {
+            return Themes.DARK ;
+        } else if (id == R.style.NightWalker ) {
+            return Themes.NIGHTWALKER ;
         }
         return Themes.HERATHEME ;
     }
@@ -126,6 +131,10 @@ public class Theme {
             return R.style.AquaMarine ;
         } else if (theme == Themes.BUTTER) {
             return R.style.Butter ;
+        } else if (theme == Themes.DARK) {
+            return R.style.Dark ;
+        } else if (theme == Themes.NIGHTWALKER) {
+            return R.style.NightWalker ;
         }
         return R.style.HeraTheme ;
     }

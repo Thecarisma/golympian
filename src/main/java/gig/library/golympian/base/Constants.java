@@ -34,6 +34,7 @@ public class Constants {
     public String LANGUAGE = "LANGUAGE" ;
     public String FONT = "FONT" ;
     public String THEME = "THEME" ;
+    public String ISFIRSTRUN = "ISFIRSTRUN" ;
 
     /**
      * constant base initializer with context
@@ -88,6 +89,16 @@ public class Constants {
      */
     public void treatDebug(String message) {
         Log.d(DEFAULTTAG, ""+message);
+    }
+
+    /**
+     * this basically treat debug to either loging or throwing it depends on the
+     * developer choice with a custom tag
+     * @param message debugable string
+     * @param tag custom tag
+     */
+    public void treatDebug(String tag, String message) {
+        Log.d(tag, ""+message);
     }
 
     /**

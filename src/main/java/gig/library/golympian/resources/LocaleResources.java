@@ -275,6 +275,19 @@ public class LocaleResources {
 
     /**
      *
+     *  this method returns the corresponding given currency sign/symbol
+     *
+     * @param curr the currency you wish to get the symbol
+     * @return the corresponding sign/symbol of the given currency
+     */
+    public static String getCurrencySign(String curr) {
+        Currency currency = getCurrency(curr);
+
+        return getCurrencySign(currency) ;
+    }
+
+    /**
+     *
      *  you provide the position/index and the corresponding currency position is returned
      *  note only integer value is passes and also the position you passes must not exceed
      *  the number of currency supported else an exception is thrown or error is logged
@@ -330,6 +343,92 @@ public class LocaleResources {
             Log.e("GIG:OLYMPUS:LR", "Index out of Bound : Only 20 Countries is currently suported 0 - 19 : index "+position+" is INVALID");
             return Currency.USD ;
         }
+    }
+
+    /**
+     *
+     *  you provide the value/shortcode and the corresponding currency position is returned
+     *  note only string value is passes and also the value you passes must be among the
+     *  current currency supported else an exception is thrown or error is logged
+     *  @see Currency
+     *  if exception is not thrown then error is logged in console ie Android monitor
+     *  and the default index Currency.USD is returned
+     *
+     * @param value the position/index you wish to get the corresponding currency value
+     * @return the currency value of given position
+     */
+    public static Currency getCurrency(String value) {
+        if (value.toUpperCase().equals("USD")) {
+            return Currency.USD ; // USD
+        } else if (value.toUpperCase().equals("NGN")) {
+            return Currency.NGN ; // NGN
+        } else if (value.toUpperCase().equals("NGN")) {
+            return Currency.EUR ; // EUR
+        } else if (value.toUpperCase().equals("GBP")) {
+            return Currency.GBP ; // GBP
+        } else if (value.toUpperCase().equals("ZAR")) {
+            return Currency.ZAR ; // ZAR
+        } else if (value.toUpperCase().equals("INR")) {
+            return Currency.INR ; // INR
+        } else if (value.toUpperCase().equals("CAD")) {
+            return Currency.CAD ; // CAD
+        } else if (value.toUpperCase().equals("LYD")) {
+            return Currency.LYD ; // LYD
+        } else if (value.toUpperCase().equals("BND")) {
+            return Currency .BND; // BND
+        } else if (value.toUpperCase().equals("SGD")) {
+            return Currency.SGD ; // SGD
+        } else if (value.toUpperCase().equals("BRL")) {
+            return Currency.BRL ; // BRL
+        } else if (value.toUpperCase().equals("ILS")) {
+            return Currency.ILS ; // ILS
+        } else if (value.toUpperCase().equals("RUB")) {
+            return Currency.RUB ; // RUB
+        } else if (value.toUpperCase().equals("GHS")) {
+            return Currency.GHS ; // GHS
+        } else if (value.toUpperCase().equals("TRY")) {
+            return Currency.TRY ; // TRY
+        } else if (value.toUpperCase().equals("NZD")) {
+            return Currency.NZD ; // NZD
+        } else if (value.toUpperCase().equals("CHF")) {
+            return Currency.CHF ; // CHF
+        } else if (value.toUpperCase().equals("KYD")) {
+            return Currency.KYD ; // KYD
+        } else if (value.toUpperCase().equals("LVL")) {
+            return Currency.LVL ; // LVL
+        } else if (value.toUpperCase().equals("JOD")) {
+            return Currency.JOD ; // JOD
+        } else {
+            Log.e("GIG:GOLYMPUS:LR", "Unsorported short code : Only 20 Countries is currently suported : value "+value+" is INVALID");
+            return Currency.USD ;
+        }
+    }
+
+    public static String getSelectedCurrency(int curr) {
+        String currency = "USD" ;
+
+        if (curr == 0) { currency = "USD" ; }
+        else if (curr == 1) { currency = "NGN" ; }
+        else if (curr == 2) { currency = "EUR" ; }
+        else if (curr == 3) { currency = "GBP" ; }
+        else if (curr == 4) { currency = "ZAR" ; }
+        else if (curr == 5) { currency = "INR" ; }
+        else if (curr == 6) { currency = "CAD" ; }
+        else if (curr == 7) { currency = "LYD" ; }
+        else if (curr == 8) { currency = "BND" ; }
+        else if (curr == 9) { currency = "SGD" ; }
+        else if (curr == 10) { currency = "BRL" ; }
+        else if (curr == 11) { currency = "ILS" ; }
+        else if (curr == 12) { currency = "RUB" ; }
+        else if (curr == 13) { currency = "GHS" ; }
+        else if (curr == 14) { currency = "TRY" ; }
+        else if (curr == 15) { currency = "NZD" ; }
+        else if (curr == 16) { currency = "CHF" ; }
+        else if (curr == 17) { currency = "KYD" ; }
+        else if (curr == 18) { currency = "LVL" ; }
+        else if (curr == 19) { currency = "JOD" ; }
+
+        return currency ;
     }
 
 }

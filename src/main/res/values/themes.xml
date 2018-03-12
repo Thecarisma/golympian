@@ -36,4 +36,16 @@
         <item name="colorPrimaryDark">@color/colorGolympianYellowDark</item>
     </style>
 
+    <style name="Dark" parent="HeraTheme">
+        <item name="colorPrimary">@color/colorGolympianGrey</item>
+        <item name="colorPrimaryDark">@color/colorGolympianGreyDark</item>
+    </style>
+
+    <style name="NightWalker" parent="HeraTheme">
+        <item name="colorPrimary">@color/colorGolympianGreyDark</item>
+        <item name="colorPrimaryDark">@color/colorGolympianBlack</item>
+        <item name="android:windowBackground">@color/colorGolympianGrey</item>
+        <item name="textColor">@color/colorGolympianWhite</item>
+    </style>
+
 </resources>

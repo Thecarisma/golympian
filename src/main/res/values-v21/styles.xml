@@ -1,12 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- Base application theme. -->
-    <attr format="color" name="layoutBackground"/>
-    <attr format="color" name="meterColor"/>
-    <attr format="color" name="buttonTextColor"/>
-    <attr format="color" name="notifyGreen"/>
-    <attr format="color" name="textColor"/>
-    <attr format="color" name="notifyRed"/>
 
     <style name="HeraTheme" parent="Theme.AppCompat">
 
@@ -29,13 +22,15 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:colorForeground">@color/colorGolympianBlack</item>
 
+        <item name="android:navigationBarColor">@color/colorGolympianPrimaryDark</item>
+
         <!-- Styling the toolbar for transparency-->
         <item name="android:windowActionBarOverlay">true</item>
         <item name="windowActionBarOverlay">true</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="actionBarStyle">@style/TransparentActionBar</item>
-        <item name = "android:actionBarStyle" >@style/ThemeActionBar </item>
+        <item name="android:actionBarStyle">@style/ThemeActionBar</item>
 
         <!-- for spinneritemstyle customization -->
         <item name="android:spinnerDropDownItemStyle">@style/DefaultSpinnerItemStyle</item>
@@ -53,34 +48,4 @@
         <item name="android:scrollbarDefaultDelayBeforeFade">1000</item>
 
     </style>
-
-    <style name="ThemeActionBar" parent = "Widget.AppCompat.Light.ActionBar.Solid" >
-    <item name="android:background" > @null </item>
-    <!-- Support library compatibility -->
-    <item name="background">@null</item >
-    <item name="android:displayOptions" >showHome|useLogo </item>
-    <item name="displayOptions">showHome|useLogo</item >
-
-    </style>
-
-    <style name="DefaultSpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
-        <item name="android:textColor">@color/colorGolympianWhite</item>
-    </style>
-
-    <style name="TransparentActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
-        <item name="android:background">@null</item>
-        <!-- Support library compatibility -->
-        <item name="background">@null</item>
-    </style>
-
-    <!-- style colors -->
-    <style name="ColorGrey"> <item name="android:textColor">@color/colorGolympianGrey</item> </style>
-    <style name="ColorDefault"> <item name="android:textColor">@color/colorGolympianGreyDark</item> </style>
-    <style name="ColorGreen"> <item name="android:textColor">@color/colorGolympianGreen</item> </style>
-    <style name="ColorBlue"> <item name="android:textColor">@color/colorGolympianBlue</item> </style>
-    <style name="ColorRed"> <item name="android:textColor">@color/colorGolympianRed</item> </style>
-    <style name="ColorYellow"> <item name="android:textColor">@color/colorGolympianYellow</item> </style>
-    <style name="ColorWhite"> <item name="android:textColor">@color/colorGolympianWhite</item> </style>
-    <style name="ColorBlack"> <item name="android:textColor">@color/colorGolympianBlack</item> </style>
-
 </resources>
