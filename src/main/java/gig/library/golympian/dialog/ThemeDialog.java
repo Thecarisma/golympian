@@ -11,13 +11,8 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
-import com.gig.networkcompanion.R;
-import com.gig.networkcompanion.utilities.Theme;
-
 import gig.library.golympian.R;
 import gig.library.golympian.utilities.Theme;
-
-import static com.gig.networkcompanion.base.ConstantBases.basecontext;
 
 /**
  * Created by Thecarisma on 17-Sep-17.

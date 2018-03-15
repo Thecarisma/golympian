@@ -139,29 +139,34 @@ public class Theme {
         return R.style.HeraTheme ;
     }
 
+    /**
+     * get the string value of the theme you wish to apply
+     * @param theme the theme you wish to get the value
+     * @return the string value of the theme
+     */
     public static String getTheme(Themes theme) {
         if (theme == Themes.HERATHEME) {
-            return R.style.HeraTheme ;
+            return "HeraTheme" ;
         } else if (theme == Themes.REDFIRE) {
-            return R.style.RedFire ;
+            return "RedFire" ;
         } else if (theme == Themes.NATURE) {
-            return R.style.Nature ;
+            return "Nature";
         } else if (theme == Themes.GREENLIFE) {
-            return R.style.GreenLife ;
+            return "GreenLife" ;
         } else if (theme == Themes.SKYBLUE) {
-            return R.style.SkyBlue ;
+            return "SkyBlue" ;
         } else if (theme == Themes.COOLBLUE) {
-            return R.style.CoolBlue ;
+            return "CoolBlue" ;
         } else if (theme == Themes.AQUAMARINE) {
-            return R.style.AquaMarine ;
+            return "AquaMarine" ;
         } else if (theme == Themes.BUTTER) {
-            return R.style.Butter ;
+            return "Butter" ;
         } else if (theme == Themes.DARK) {
-            return R.style.Dark ;
+            return "Dark" ;
         } else if (theme == Themes.NIGHTWALKER) {
-            return R.style.NightWalker ;
+            return "Night Walker" ;
         }
-        return R.style.HeraTheme ;
+        return "HeraTheme" ;
     }
 
 }

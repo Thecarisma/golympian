@@ -27,8 +27,9 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     public void initActivity() {
-        Theme.setTheme(this, Theme.Themes.COOLBLUE); font = new Font(this);
-        Language.setLanguage(this, Language.Languages.ENGLISH);
+        Theme.setTheme(this, Theme.getThemeId(settings.getInt("THEME", Theme.getThemeId(Theme.Themes.COOLBLUE))));
+        font = new Font(this);
+        Language.setLanguage(this, settings.getString("LANGUAGE",Language.getLanguage(Language.Languages.ENGLISH)));
         font.overrideFont(this, "SERIF", font.getSavedFont());
     }
 

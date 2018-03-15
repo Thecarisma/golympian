@@ -62,6 +62,20 @@ public class Language {
     }
 
     /**
+     * set the device language to defined language
+     * @param activity the activity that hold everything
+     * @param language the type of language to set
+     */
+    public static void setLanguage(Activity activity, String language) {
+        Configuration config = activity.getBaseContext().getResources().getConfiguration();
+        String lang = language;
+        Locale.setDefault(new Locale(lang));
+        config.locale = new Locale(lang);
+        activity.getBaseContext().getResources().updateConfiguration(config,
+                activity.getBaseContext().getResources().getDisplayMetrics());
+    }
+
+    /**
      * set the application language according to the saved value in the shared preference
      * @param settings the shared preference to load language from
      */
