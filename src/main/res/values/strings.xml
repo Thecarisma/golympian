@@ -1,3 +1,14 @@
 <resources>
     <string name="library_name">golympian</string>
+
+    <!-- THEME -->
+    <string name="theme_red_fire">RedFire</string>
+    <string name="theme_nature">Nature</string>
+    <string name="theme_green_life">GreenLife</string>
+    <string name="theme_sky_blue">SkyBlue</string>
+    <string name="theme_cool_blue">CoolBlue</string>
+    <string name="theme_aqua_marine">AquaMarine</string>
+    <string name="theme_butter">Butter</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_night_walker">NightWalker</string>
 </resources>

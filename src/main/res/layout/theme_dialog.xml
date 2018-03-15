@@ -19,19 +19,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:id="@+id/theme_green_culture_select"
+            android:id="@+id/theme_red_fire"
             android:orientation="vertical">
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:background="@drawable/greenbackground"/>
+                android:background="@color/colorGolympianRed"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="?attr/themeTextColor"
-                android:text="@string/theme_green_culture"
+                android:textColor="?attr/textColor"
+                android:text="@string/theme_red_fire"
                 android:layout_gravity="center_horizontal"/>
 
         </LinearLayout>
@@ -40,19 +40,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:id="@+id/theme_hot_red_select"
+                android:id="@+id/theme_nature"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/redbackground"/>
+                    android:background="@color/colorGolympianGreen"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="?attr/themeTextColor"
-                    android:text="@string/theme_hot_red"
+                    android:textColor="?attr/textColor"
+                    android:text="@string/theme_nature"
                     android:layout_gravity="center_horizontal"/>
 
             </LinearLayout>
@@ -68,19 +68,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:id="@+id/theme_black_danger_select"
+                android:id="@+id/theme_green_life"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/redbackground"/>
+                    android:background="@color/colorGolympianGreenDark"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="?attr/themeTextColor"
-                    android:text="@string/theme_black_danger"
+                    android:textColor="?attr/textColor"
+                    android:text="@string/theme_green_life"
                     android:layout_gravity="center_horizontal"/>
 
             </LinearLayout>
@@ -89,19 +89,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:id="@+id/theme_light_blue_select"
+                android:id="@+id/theme_sky_blue"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/lightbluebackground"/>
+                    android:background="@color/colorGolympianBlueLight"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="?attr/themeTextColor"
-                    android:text="@string/theme_light_blue"
+                    android:textColor="?attr/textColor"
+                    android:text="@string/theme_sky_blue"
                     android:layout_gravity="center_horizontal"/>
 
             </LinearLayout>
@@ -117,19 +117,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:id="@+id/theme_blue_select"
+                android:id="@+id/theme_cool_blue"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/bluebackground"/>
+                    android:background="@color/colorGolympianBlueDark"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="?attr/themeTextColor"
-                    android:text="@string/theme_blue"
+                    android:textColor="?attr/textColor"
+                    android:text="@string/theme_cool_blue"
                     android:layout_gravity="center_horizontal"/>
 
             </LinearLayout>
@@ -138,25 +138,101 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:id="@+id/theme_yellow_select"
+                android:id="@+id/theme_aqua_marine"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/yellowbackground"/>
+                    android:background="@color/colorGolympianAquaBlue"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="?attr/themeTextColor"
-                    android:text="@string/theme_yellow_sunset"
+                    android:textColor="?attr/textColor"
+                    android:text="@string/theme_aqua_marine"
                     android:layout_gravity="center_horizontal"/>
 
             </LinearLayout>
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/theme_butter"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="@color/colorGolympianYellowDark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
+                    android:text="@string/theme_butter"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/theme_dark"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="@color/colorGolympianGreyDark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
+                    android:text="@string/theme_dark"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/theme_night_walker"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="@color/colorGolympianBlack"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
+                    android:text="@string/theme_night_walker"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
