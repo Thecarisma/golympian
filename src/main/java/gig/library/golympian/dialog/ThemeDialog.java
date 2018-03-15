@@ -1,5 +1,6 @@
 package gig.library.golympian.dialog;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
@@ -14,6 +15,7 @@ import com.gig.networkcompanion.R;
 import com.gig.networkcompanion.utilities.Theme;
 
 import gig.library.golympian.R;
+import gig.library.golympian.utilities.Theme;
 
 import static com.gig.networkcompanion.base.ConstantBases.basecontext;
 
@@ -22,10 +24,10 @@ import static com.gig.networkcompanion.base.ConstantBases.basecontext;
  */
 public class ThemeDialog extends Dialog {
 
-    TextView themeIndicator ;
+    TextView themeIndicator ; Activity context ;
 
     public ThemeDialog(Context c, TextView themein) {
-        super(c); themeIndicator = themein ;
+        super(c); context = (Activity) c ; themeIndicator = themein ;
 
     }
 
@@ -38,49 +40,67 @@ public class ThemeDialog extends Dialog {
     }
 
     public void onClick() {
-        findViewById(R.id.theme_green_culture_select).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.theme_red_fire).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setTheme(R.style.GreenTheme);
+                setTheme(Theme.Themes.REDFIRE);
             }
         });
-        findViewById(R.id.theme_hot_red_select).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.theme_nature).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setTheme(R.style.RedTheme);
+                setTheme(Theme.Themes.NATURE);
             }
         });
-        findViewById(R.id.theme_black_danger_select).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.theme_green_life).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setTheme(R.style.RedBlackTheme);
+                setTheme(Theme.Themes.GREENLIFE);
             }
         });
-        findViewById(R.id.theme_light_blue_select).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.theme_sky_blue).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setTheme(R.style.LightBlueTheme);
+                setTheme(Theme.Themes.SKYBLUE);
             }
         });
-        findViewById(R.id.theme_blue_select).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.theme_cool_blue).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setTheme(R.style.BlueTheme);
+                setTheme(Theme.Themes.COOLBLUE);
             }
         });
-        findViewById(R.id.theme_yellow_select).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.theme_aqua_marine).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setTheme(R.style.SunsetTheme);
+                setTheme(Theme.Themes.AQUAMARINE);
+            }
+        });
+        findViewById(R.id.theme_butter).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setTheme(Theme.Themes.BUTTER);
+            }
+        });
+        findViewById(R.id.theme_dark).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setTheme(Theme.Themes.DARK);
+            }
+        });
+        findViewById(R.id.theme_night_walker).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setTheme(Theme.Themes.NIGHTWALKER);
             }
         });
     }
 
-    private void setTheme(int themeval) {
-        PreferenceManager.getDefaultSharedPreferences(basecontext.getApplicationContext()).edit().putInt("THEME", themeval).apply();
-        android.content.res.Configuration config = basecontext.getBaseContext().getResources().getConfiguration();
-        basecontext.getBaseContext().getResources().updateConfiguration(config, basecontext.getBaseContext().getResources().getDisplayMetrics());
-        themeIndicator.setText(Theme.getTheme()); dismiss(); basecontext.recreate();
+    private void setTheme(Theme.Themes themeval) {
+        PreferenceManager.getDefaultSharedPreferences(context).edit().putInt("THEME", Theme.getThemeId(themeval)).apply();
+        android.content.res.Configuration config = context.getBaseContext().getResources().getConfiguration();
+        context.getResources().updateConfiguration(config, context.getBaseContext().getResources().getDisplayMetrics());
+        themeIndicator.setText(Theme.getTheme(themeval)); dismiss(); context.recreate();
     }
 
 

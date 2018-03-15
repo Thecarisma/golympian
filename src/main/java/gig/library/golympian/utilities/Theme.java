@@ -139,4 +139,29 @@ public class Theme {
         return R.style.HeraTheme ;
     }
 
+    public static String getTheme(Themes theme) {
+        if (theme == Themes.HERATHEME) {
+            return R.style.HeraTheme ;
+        } else if (theme == Themes.REDFIRE) {
+            return R.style.RedFire ;
+        } else if (theme == Themes.NATURE) {
+            return R.style.Nature ;
+        } else if (theme == Themes.GREENLIFE) {
+            return R.style.GreenLife ;
+        } else if (theme == Themes.SKYBLUE) {
+            return R.style.SkyBlue ;
+        } else if (theme == Themes.COOLBLUE) {
+            return R.style.CoolBlue ;
+        } else if (theme == Themes.AQUAMARINE) {
+            return R.style.AquaMarine ;
+        } else if (theme == Themes.BUTTER) {
+            return R.style.Butter ;
+        } else if (theme == Themes.DARK) {
+            return R.style.Dark ;
+        } else if (theme == Themes.NIGHTWALKER) {
+            return R.style.NightWalker ;
+        }
+        return R.style.HeraTheme ;
+    }
+
 }
