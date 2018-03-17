@@ -27,7 +27,7 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     public void initActivity() {
-        Theme.setTheme(this, Theme.getThemeId(settings.getInt("THEME", Theme.getThemeId(Theme.Themes.COOLBLUE))));
+        Theme.setTheme(this, Theme.getThemeId(settings.getInt("THEME", Theme.getThemeId(Theme.Themes.GREENLIFE))));
         font = new Font(this);
         Language.setLanguage(this, settings.getString("LANGUAGE",Language.getLanguage(Language.Languages.ENGLISH)));
         font.overrideFont(this, "SERIF", font.getSavedFont());
@@ -35,6 +35,10 @@ public class BaseActivity extends AppCompatActivity {
 
     public void setTitle(String title) {
         if ( getSupportActionBar() != null) getSupportActionBar().setTitle(title);
+    }
+
+    public BaseActivity getActivity() {
+        return this ;
     }
 
     //we are not using a custom shared preference becuse we want other activity that extends this class

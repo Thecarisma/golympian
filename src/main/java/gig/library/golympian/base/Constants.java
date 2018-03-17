@@ -26,6 +26,7 @@ public class Constants {
     public String USERDEVICETAG = "GOLYMPIAN.USERDEVICE" ;
     public String VIEWETAG = "GOLYMPIAN.VIEW" ;
     public String UTILITYETAG = "GOLYMPIAN.UTILITIES" ;
+    public String LIBRARYNAME = "GOLYMPIAN" ;
 
     /**
      * String constants : shared preference

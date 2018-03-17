@@ -37,4 +37,7 @@
     <color name="colorGolympianYellowLight">#f5ff8b</color>
     <color name="colorGolympianYellowDark">#ced10c</color>
 
+    <!-- OTHERS -->
+    <color name="colorGolympianPinkDarker">#8e025b</color>
+
 </resources>
