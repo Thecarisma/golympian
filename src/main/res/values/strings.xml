@@ -1,5 +1,5 @@
 <resources>
-    <string name="library_name">golympian</string>
+    <string name="app_name">golympian</string>
 
     <!-- THEME -->
     <string name="theme_red_fire">RedFire</string>

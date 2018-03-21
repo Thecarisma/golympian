@@ -8,7 +8,7 @@
     <attr format="color" name="textColor"/>
     <attr format="color" name="notifyRed"/>
 
-    <style name="HeraTheme" parent="Theme.AppCompat">
+    <style name="HeraTheme" parent="AppTheme">
 
         <item name="android:windowBackground">@color/colorGolympianWhite</item>
         <item name="colorPrimary">@color/colorGolympianPrimary</item>
@@ -82,5 +82,21 @@
     <style name="ColorYellow"> <item name="android:textColor">@color/colorGolympianYellow</item> </style>
     <style name="ColorWhite"> <item name="android:textColor">@color/colorGolympianWhite</item> </style>
     <style name="ColorBlack"> <item name="android:textColor">@color/colorGolympianBlack</item> </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorGolympianPrimary</item>
+        <item name="colorPrimaryDark">@color/colorGolympianPrimaryDark</item>
+        <item name="colorAccent">@color/colorGolympianAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
