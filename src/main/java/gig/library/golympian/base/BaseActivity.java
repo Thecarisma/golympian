@@ -4,6 +4,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
 
 import gig.library.golympian.utilities.Font;
 import gig.library.golympian.utilities.Language;
@@ -23,7 +24,7 @@ public class BaseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         settings = PreferenceManager.getDefaultSharedPreferences(this); initActivity() ;
-        baseActivity = this ;
+        baseActivity = this ; AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
     }
 
     public void initActivity() {

@@ -5,6 +5,8 @@ package gig.library.golympian.views;
  */
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.RelativeSizeSpan;
@@ -124,16 +126,76 @@ public class MenuTune {
 
     /**
      * use this method to set the textColor of all MenuItem in a menu with custom color and custom text size
-     * @param menu
-     * @param color
-     * @param size
-     * @param context
+     * @param menu the menu
+     * @param color the desired color
+     * @param size the custome size if the menu item
+     * @param context base context/activity
      */
     public static void setMenuItemsColor(Context context, Menu menu, MenuItemColor color, MenuItemTextSize size) {
         for(int i = 0; i < menu.size(); i++) {
             MenuItem item = menu.getItem(i);
             setMenuItemColor(context, item, color, size);
         }
+    }
+
+    /**
+     * call the method to set the tint color of all the menuitems in the specified menu
+     * @param context parenting context/activity
+     * @param menu the menu containing the menu items
+     * @param color a color to set on the menu items
+     */
+    public static void tintMenuIcons(Context context, Menu menu, MenuItemColor color) {
+        for(int i = 0; i < menu.size(); i++) {
+            MenuItem item = menu.getItem(i);
+            Drawable normalDrawable = item.getIcon();
+            Drawable wrapDrawable = DrawableCompat.wrap(normalDrawable);
+            DrawableCompat.setTint(wrapDrawable, context.getResources().getColor(getMenuItemColor(color)));
+            item.setIcon(wrapDrawable);
+        }
+    }
+
+    /**
+     * call the method to set the tint color of all the menuitems in the specified menu
+     * @param context parenting context/activity
+     * @param menu the menu containing the menu items
+     * @param color the color value to set on the menu items
+     */
+    public static void tintMenuIcons(Context context, Menu menu, int color) {
+        for(int i = 0; i < menu.size(); i++) {
+            MenuItem item = menu.getItem(i);
+            Drawable normalDrawable = item.getIcon();
+            Drawable wrapDrawable = DrawableCompat.wrap(normalDrawable);
+            DrawableCompat.setTint(wrapDrawable, context.getResources().getColor(color));
+            item.setIcon(wrapDrawable);
+        }
+    }
+
+    /**
+     * change the menuitem color forcefully regardless of all other atributes
+     * @param context parenting context/activity
+     * @param item the menu item to change the color
+     * @param color the color value to set on the menu items
+     */
+    public static void tintMenuIcon(Context context, MenuItem item, MenuItemColor color) {
+        Drawable normalDrawable = item.getIcon();
+        Drawable wrapDrawable = DrawableCompat.wrap(normalDrawable);
+        DrawableCompat.setTint(wrapDrawable, context.getResources().getColor(getMenuItemColor(color)));
+
+        item.setIcon(wrapDrawable);
+    }
+
+    /**
+     * change the menuitem color forcefully regardless of all other atributes
+     * @param context parenting context/activity
+     * @param item the menu item to change the color
+     * @param color the color value to set on the menu items
+     */
+    public static void tintMenuIcon(Context context, MenuItem item, int color) {
+        Drawable normalDrawable = item.getIcon();
+        Drawable wrapDrawable = DrawableCompat.wrap(normalDrawable);
+        DrawableCompat.setTint(wrapDrawable, context.getResources().getColor(color));
+
+        item.setIcon(wrapDrawable);
     }
 
     public static int getMenuItemColor(MenuItemColor color) {
