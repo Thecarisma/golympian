@@ -11,4 +11,7 @@
     <string name="theme_butter">Butter</string>
     <string name="theme_dark">Dark</string>
     <string name="theme_night_walker">NightWalker</string>
+
+    <!-- AD -->
+    <string name="test_banner_ad_unit">ca-app-pub-3940256099942544/6300978111</string>
 </resources>
