@@ -8,7 +8,7 @@
     <attr format="color" name="textColor"/>
     <attr format="color" name="notifyRed"/>
 
-    <style name="HeraTheme" parent="AppTheme">
+    <style name="HeraTheme" parent="AppTheme.NoActionBar">
 
         <item name="android:windowBackground">@color/colorGolympianWhite</item>
         <item name="colorPrimary">@color/colorGolympianPrimary</item>
@@ -21,6 +21,9 @@
         <item name="meterColor">@color/colorGolympianGreenDark</item>
         <item name="notifyGreen">@color/colorGolympianGreen</item>
         <item name="notifyRed">@color/colorGolympianRed</item>
+
+        <!-- for the toolbar icon default tint : might be transparent in future-->
+        <item name="colorControlNormal">@color/colorGolympianWhite</item>
 
         <item name="android:colorBackgroundCacheHint">@color/colorGolympianWhite</item>
         <item name="android:windowContentOverlay">@color/colorGolympianTransparent</item>
