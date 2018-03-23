@@ -1,8 +1,10 @@
 package gig.library.golympian.base;
 
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.multidex.MultiDex;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
 
@@ -36,6 +38,12 @@ public class BaseActivity extends AppCompatActivity {
 
     public void setTitle(String title) {
         if ( getSupportActionBar() != null) getSupportActionBar().setTitle(title);
+    }
+
+    @Override
+    protected void attachBaseContext(Context base){
+        super.attachBaseContext(base);
+        MultiDex.install(this);
     }
 
     //we are not using a custom shared preference becuse we want other activity that extends this class
