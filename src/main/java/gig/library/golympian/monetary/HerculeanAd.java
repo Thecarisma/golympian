@@ -16,6 +16,8 @@ public class HerculeanAd {
 
     public static String TEST_BANNER_AD_UNIT = "ca-app-pub-3940256099942544/6300978111" ;
 
+    public HerculeanAd() { }
+
     public HerculeanAd(AdView mAdView) {
         adViews.add(mAdView) ; adRequests.add(new AdRequest.Builder().build());
     }
@@ -34,6 +36,30 @@ public class HerculeanAd {
     }
 
     public HerculeanAd(Activity activity, ArrayList<Integer> mAdView) {
+        for (int a = 0 ; a < mAdView.size(); a++) {
+            adViews.add(((AdView) activity.findViewById(mAdView.get(a)))) ;
+            adRequests.add(new AdRequest.Builder().build());
+        }
+    }
+
+    public void add(AdView mAdView) {
+        adViews.add(mAdView) ; adRequests.add(new AdRequest.Builder().build());
+    }
+
+    public void add(View mAdView) {
+        adViews.add((AdView)mAdView) ; adRequests.add(new AdRequest.Builder().build());
+    }
+
+    public void add(ArrayList<AdView> mAdViews) {
+        adViews = mAdViews ; adRequests.add(new AdRequest.Builder().build());
+    }
+
+    public void add(Activity activity, int mAdView) {
+        adViews.add(((AdView) activity.findViewById(mAdView))) ;
+        adRequests.add(new AdRequest.Builder().build());
+    }
+
+    public void add(Activity activity, ArrayList<Integer> mAdView) {
         for (int a = 0 ; a < mAdView.size(); a++) {
             adViews.add(((AdView) activity.findViewById(mAdView.get(a)))) ;
             adRequests.add(new AdRequest.Builder().build());
