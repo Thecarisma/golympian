@@ -4,9 +4,13 @@ import android.app.Activity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
+import java.net.URL;
 import java.util.ArrayList;
 
 import gig.library.golympian.R;
@@ -42,6 +46,26 @@ public class LightView {
     }
 
     /**
+     * set the content of string text view into the provided editText and throws error
+     * if it is null
+     * @param editText the textView
+     * @param text the string content
+     */
+    public void setText(EditText editText, String text) {
+        editText.setText(text);
+    }
+
+    /**
+     * set the content of string text view into the provided textView and throws error
+     * if it is null
+     * @param textView the textView
+     * @param text the string content
+     */
+    public void setText(TextView textView, String text) {
+        textView.setText(text);
+    }
+
+    /**
      * set the content of string text view into the provided view id and throws error
      * if it is null. The view from provided view
      * @param id the view id
@@ -71,6 +95,22 @@ public class LightView {
             ((EditText) activity.findViewById(id)).setText(text);
         }
 
+    }
+
+    public void loadImage(ImageView imgView, String url) {
+        Glide.with(activity.getApplicationContext()).load(url).into(imgView);
+    }
+
+    public void loadImage(int id, String url) {
+        loadImage(((ImageView)activity.findViewById(id)), url);
+    }
+
+    public void loadImage(ImageView imgView, URL url) {
+        loadImage(imgView, url.getPath());
+    }
+
+    public void loadImage(int id, URL url) {
+        loadImage(((ImageView)activity.findViewById(id)), url.getPath());
     }
 
     public void setVisibility(int id, int visibility) {
