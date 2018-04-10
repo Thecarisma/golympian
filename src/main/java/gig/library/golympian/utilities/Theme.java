@@ -3,8 +3,10 @@ package gig.library.golympian.utilities;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.widget.TextView;
 
 import gig.library.golympian.R;
+import gig.library.golympian.base.BaseActivity;
 
 import static gig.library.golympian.base.Constants.aresconstants;
 
@@ -137,6 +139,10 @@ public class Theme {
             return R.style.NightWalker ;
         }
         return R.style.HeraTheme ;
+    }
+
+    public static void setIndicator(SharedPreferences settings, TextView indicator) {
+        indicator.setText(getTheme(getThemeId(settings.getInt("THEME",R.style.HeraTheme))));
     }
 
     /**

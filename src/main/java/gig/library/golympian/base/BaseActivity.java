@@ -46,6 +46,10 @@ public class BaseActivity extends AppCompatActivity {
         MultiDex.install(this);
     }
 
+    public BaseActivity getBaseActivity() {
+        return this ;
+    }
+
     //we are not using a custom shared preference becuse we want other activity that extends this class
     //to have access to the shared preference
     //settings = this.getSharedPreferences(aresconstants.SHAREDPREFERENCENAME, MODE_PRIVATE);
