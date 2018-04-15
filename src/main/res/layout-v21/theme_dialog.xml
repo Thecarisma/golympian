@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/colorGolympianWhite">
+    android:background="@drawable/curve_dialog_shape">
 
     <LinearLayout
         android:orientation="vertical"
@@ -31,6 +31,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="?attr/textColor"
                 android:text="@string/theme_red_fire"
                 android:layout_gravity="center_horizontal"/>
 
@@ -51,6 +52,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
                     android:text="@string/theme_nature"
                     android:layout_gravity="center_horizontal"/>
 
@@ -78,6 +80,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
                     android:text="@string/theme_green_life"
                     android:layout_gravity="center_horizontal"/>
 
@@ -98,6 +101,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
                     android:text="@string/theme_sky_blue"
                     android:layout_gravity="center_horizontal"/>
 
@@ -125,6 +129,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
                     android:text="@string/theme_cool_blue"
                     android:layout_gravity="center_horizontal"/>
 
@@ -145,6 +150,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
                     android:text="@string/theme_aqua_marine"
                     android:layout_gravity="center_horizontal"/>
 
@@ -172,6 +178,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
                     android:text="@string/theme_butter"
                     android:layout_gravity="center_horizontal"/>
 
@@ -192,6 +199,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
                     android:text="@string/theme_dark"
                     android:layout_gravity="center_horizontal"/>
 
@@ -219,6 +227,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
                     android:text="@string/theme_night_walker"
                     android:layout_gravity="center_horizontal"/>
 
