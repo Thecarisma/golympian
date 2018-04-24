@@ -45,6 +45,7 @@
         <item name="colorPrimary">@color/colorGolympianGreyDark</item>
         <item name="colorPrimaryDark">@color/colorGolympianBlack</item>
         <item name="android:windowBackground">@color/colorGolympianGrey</item>
+        <item name="layoutBackground">@color/colorGolympianGrey</item>
         <item name="textColor">@color/colorGolympianWhite</item>
     </style>
 

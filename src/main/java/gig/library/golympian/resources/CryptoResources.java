@@ -12,6 +12,8 @@ import java.text.DecimalFormat;
 
 import gig.library.golympian.misc.ZeusMath;
 
+import static gig.library.golympian.base.Constants.aresconstants;
+
 /**
  *
  *  Created by Azeez Adewale on 11/25/2017.
@@ -157,7 +159,7 @@ public class CryptoResources {
      *  should be converted to string first the other treatment occurs here. it return the
      *  new value with the currency symbol to (eg. $ 5000) also only currency should be passed
      *  to avoid error. PLEASE BEFORE CALLING THIS METHOD YOU SHOULD CALL THE
-     *  @see GetConversionRates  first to fetch the conversion rates for the supported currencies
+     *  GetConversionRates  first to fetch the conversion rates for the supported currencies
      *  TO FETCH THE CONVERSION RATES use new GetConversionRates().execute(context);
      *  if the conversion rates has not been fetch it is been called to get rates
      *  it can also be used to convert any monetary value from dollar to any other base
@@ -182,7 +184,7 @@ public class CryptoResources {
         if (currency == Currency.USD) {
             /** we leave it as it is since it dollar **/
         } else {
-            price = price * Float.parseFloat(settings.getString(currency+"RATE", "320.32"));
+            price = price * Float.parseFloat(settings.getString(currency+"RATE", "6200.32"));
         } decimalFormat.format(price) ;
 
         return LocaleResources.getCurrencySign(currency)+" "+price ;
@@ -195,7 +197,7 @@ public class CryptoResources {
      *  should be converted to string first the other treatment occurs here. it return the
      *  new value without the currency symbol to (eg. 5000) also only currency should be passed
      *  to avoid error. PLEASE BEFORE CALLING THIS METHOD YOU SHOULD CALL THE
-     *  @see GetConversionRates  first to fetch the conversion rates for the supported currencies
+     *  GetConversionRates  first to fetch the conversion rates for the supported currencies
      *  TO FETCH THE CONVERSION RATES use new GetConversionRates().execute(context);
      *  if the conversion rates has not been fetch it is been called to get rates
      *  it can also be used to convert any monetary value from dollar to any other base
@@ -219,8 +221,10 @@ public class CryptoResources {
         if (currency == Currency.USD) {
             /** we leave it as it is since it dollar **/
         } else {
+            aresconstants.debugError("PRICE : "+price+", RATE : "+settings.getString(currency+"RATE", "320.32"));
             price = price * Float.parseFloat(settings.getString(currency+"RATE", "320.32"));
-        } decimalFormat.format(price) ;
+        }
+        decimalFormat.format(price) ;
 
         return price ;
     }
@@ -319,7 +323,8 @@ public class CryptoResources {
      */
     public static String getAbsoluteRate(Currency currency, CryptoCurrency cryptocurrency, Context context) {
         SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(context);
-        float value = 0.0f ; String val = (Float.parseFloat(settings.getString("BTC_"+cryptocurrency.name()+"_RATE", "446.1")))+"";
+        float value = 0.0f ; //stll need like get conversion rate to get btc to other crypto
+        String val = (Float.parseFloat(settings.getString("USD_"+cryptocurrency.name()+"_RATE", "446.1")))+"";
         value = getPrice(val, currency, context);
 
         value = ZeusMath.roundFloat(value, 6) ;
@@ -338,7 +343,7 @@ public class CryptoResources {
      */
     public static float getRate(Currency currency, CryptoCurrency cryptocurrency, Context context) {
         SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(context);
-        float value = 0.0f ; String val = (Float.parseFloat(settings.getString("BTC_"+cryptocurrency.name()+"_RATE", "446.1")))+"";
+        float value = 0.0f ; String val = (Float.parseFloat(settings.getString("USD_"+cryptocurrency.name()+"_RATE", "446.1")))+"";
         value = getPrice(val, currency, context);
 
         value = ZeusMath.roundFloat(value, 6) ;

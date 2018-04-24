@@ -19,7 +19,7 @@ import gig.library.golympian.views.LightView;
 
 public class BaseActivity extends AppCompatActivity {
 
-    public SharedPreferences settings ;
+    public SharedPreferences settings ; public Theme.Themes theme = Theme.Themes.HERATHEME;
     public Font font ; public static BaseActivity baseActivity ;
 
     @Override
@@ -30,7 +30,8 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     public void initActivity() {
-        Theme.setTheme(this, Theme.getThemeId(settings.getInt("THEME", Theme.getThemeId(Theme.Themes.COOLBLUE))));
+        theme = Theme.getThemeId(settings.getInt("THEME", Theme.getThemeId(Theme.Themes.HERATHEME)));
+        Theme.setTheme(this, Theme.getThemeId(settings.getInt("THEME", Theme.getThemeId(Theme.Themes.HERATHEME))));
         font = new Font(this);
         Language.setLanguage(this, settings.getString("LANGUAGE",Language.getLanguage(Language.Languages.ENGLISH)));
         font.overrideFont(this, "SERIF", font.getSavedFont());

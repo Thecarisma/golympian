@@ -5,6 +5,7 @@ import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.app.Activity;
 import android.database.Cursor;
+import android.os.Build;
 import android.provider.ContactsContract;
 import android.util.Patterns;
 
@@ -96,6 +97,18 @@ public class DeviceUser {
     private void requestContactAndProfilePermission() {
         Permission.requestPermission(activity, Manifest.permission.READ_CONTACTS, Permission.REQUEST_PERMISSION);
         Permission.requestPermission(activity, Manifest.permission.GET_ACCOUNTS, Permission.REQUEST_PERMISSION);
+    }
+
+    public int getBuildVersion() {
+        return Build.VERSION.SDK_INT ;
+    }
+
+    public Build getBuild() {
+        return new Build() ;
+    }
+
+    public String getBuildName() {
+        return Build.VERSION.CODENAME ;
     }
 
 }

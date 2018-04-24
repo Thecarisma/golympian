@@ -95,7 +95,7 @@ public class ThemeDialog extends Dialog {
         PreferenceManager.getDefaultSharedPreferences(context).edit().putInt("THEME", Theme.getThemeId(themeval)).apply();
         android.content.res.Configuration config = context.getBaseContext().getResources().getConfiguration();
         context.getResources().updateConfiguration(config, context.getBaseContext().getResources().getDisplayMetrics());
-        themeIndicator.setText(Theme.getTheme(themeval)); dismiss(); context.recreate();
+        if (themeIndicator != null ) { themeIndicator.setText(Theme.getTheme(themeval));}  dismiss(); context.recreate();
     }
 
 

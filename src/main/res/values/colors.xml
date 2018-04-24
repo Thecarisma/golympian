@@ -37,4 +37,10 @@
     <color name="colorGolympianYellowLight">#f5ff8b</color>
     <color name="colorGolympianYellowDark">#ced10c</color>
 
+    <!-- PINKS -->
+    <color name="colorGolympianPink">#ff41ad</color>
+    <color name="colorGolympianPurple">#e401dd</color>
+    <color name="colorGolympianPurpleDark">#9b0396</color>
+
+
 </resources>

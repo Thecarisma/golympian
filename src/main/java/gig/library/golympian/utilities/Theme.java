@@ -1,8 +1,10 @@
 package gig.library.golympian.utilities;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.support.annotation.ColorInt;
 import android.widget.TextView;
 
 import gig.library.golympian.R;
@@ -173,6 +175,83 @@ public class Theme {
             return "Night Walker" ;
         }
         return "HeraTheme" ;
+    }
+
+    public static int getColorPrimaryDark(Themes theme) {
+        if (theme == Themes.HERATHEME) {
+            return R.color.colorGolympianPrimaryDark ;
+        } else if (theme == Themes.REDFIRE) {
+            return R.color.colorGolympianRed ;
+        } else if (theme == Themes.NATURE) {
+            return R.color.colorGolympianGreen ;
+        } else if (theme == Themes.GREENLIFE) {
+            return R.color.colorGolympianGreenDark ;
+        } else if (theme == Themes.SKYBLUE) {
+            return R.color.colorGolympianBlueLight ;
+        } else if (theme == Themes.COOLBLUE) {
+            return R.color.colorGolympianBlueDark ;
+        } else if (theme == Themes.AQUAMARINE) {
+            return R.color.colorGolympianAquaBlue ;
+        } else if (theme == Themes.BUTTER) {
+            return R.color.colorGolympianYellowDark ;
+        } else if (theme == Themes.DARK) {
+            return R.color.colorGolympianGreyDark ;
+        } else if (theme == Themes.NIGHTWALKER) {
+            return R.color.colorGolympianWhite ;
+        }
+        return R.color.colorGolympianPrimaryDark ;
+    }
+
+    @ColorInt
+    public static int getColorPrimaryDark(Context context, Themes theme) {
+        if (theme == Themes.HERATHEME) {
+            return context.getResources().getColor(R.color.colorGolympianPrimaryDark) ;
+        } else if (theme == Themes.REDFIRE) {
+            return context.getResources().getColor(R.color.colorGolympianRed) ;
+        } else if (theme == Themes.NATURE) {
+            return context.getResources().getColor(R.color.colorGolympianGreen) ;
+        } else if (theme == Themes.GREENLIFE) {
+            return context.getResources().getColor(R.color.colorGolympianGreenDark) ;
+        } else if (theme == Themes.SKYBLUE) {
+            return context.getResources().getColor(R.color.colorGolympianBlueLight) ;
+        } else if (theme == Themes.COOLBLUE) {
+            return context.getResources().getColor(R.color.colorGolympianBlueDark) ;
+        } else if (theme == Themes.AQUAMARINE) {
+            return context.getResources().getColor(R.color.colorGolympianAquaBlue) ;
+        } else if (theme == Themes.BUTTER) {
+            return context.getResources().getColor(R.color.colorGolympianYellowDark) ;
+        } else if (theme == Themes.DARK) {
+            return context.getResources().getColor(R.color.colorGolympianGreyDark) ;
+        } else if (theme == Themes.NIGHTWALKER) {
+            return context.getResources().getColor(R.color.colorGolympianWhite) ;
+        }
+        return context.getResources().getColor(R.color.colorGolympianPrimaryDark) ;
+    }
+
+    @ColorInt
+    public static int getColorPrimaryDark(BaseActivity context) {
+        if (context.theme == Themes.HERATHEME) {
+            return context.getResources().getColor(R.color.colorGolympianPrimaryDark) ;
+        } else if (context.theme == Themes.REDFIRE) {
+            return context.getResources().getColor(R.color.colorGolympianRed) ;
+        } else if (context.theme == Themes.NATURE) {
+            return context.getResources().getColor(R.color.colorGolympianGreen) ;
+        } else if (context.theme == Themes.GREENLIFE) {
+            return context.getResources().getColor(R.color.colorGolympianGreenDark) ;
+        } else if (context.theme == Themes.SKYBLUE) {
+            return context.getResources().getColor(R.color.colorGolympianBlueLight) ;
+        } else if (context.theme == Themes.COOLBLUE) {
+            return context.getResources().getColor(R.color.colorGolympianBlueDark) ;
+        } else if (context.theme == Themes.AQUAMARINE) {
+            return context.getResources().getColor(R.color.colorGolympianAquaBlue) ;
+        } else if (context.theme == Themes.BUTTER) {
+            return context.getResources().getColor(R.color.colorGolympianYellowDark) ;
+        } else if (context.theme == Themes.DARK) {
+            return context.getResources().getColor(R.color.colorGolympianGreyDark) ;
+        } else if (context.theme == Themes.NIGHTWALKER) {
+            return context.getResources().getColor(R.color.colorGolympianWhite) ;
+        }
+        return context.getResources().getColor(R.color.colorGolympianPrimaryDark) ;
     }
 
 }

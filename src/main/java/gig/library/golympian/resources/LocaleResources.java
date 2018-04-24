@@ -41,7 +41,7 @@ public class LocaleResources {
      * @TODO to change the repository to gig dedicate server in future
      *
      */
-    public static String imageLocation = "pathtoimageabsolute" ;
+    public static String imageurl = "http://raw.githubusercontent.com/Thecarisma/andcoincap/master/coinworld/denomlogo/" ;
 
     /**
      *
@@ -62,122 +62,122 @@ public class LocaleResources {
             /**
              * USA
              */
-            imageLocation = imageLocation.replace("countryname", "usa") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"usa.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.NGN) {
             /**
              * NGN
              */
-            imageLocation = imageLocation.replace("countryname", "ngn") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"nigeria.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.EUR) {
             /**
              * EURO
              */
-            imageLocation = imageLocation.replace("countryname", "euro") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"euro.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.GBP) {
             /**
              * BRITAIN
              */
-            imageLocation = imageLocation.replace("countryname", "britain") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"britain.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.ZAR) {
             /**
              * SOUTH AFRICA
              */
-            imageLocation = imageLocation.replace("countryname", "south_africa") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"south_africa.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.INR) {
             /**
              * INDIA
              */
-            imageLocation = imageLocation.replace("countryname", "india") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"india.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.CAD) {
             /**
              * CANADA
              */
-            imageLocation = imageLocation.replace("countryname", "canada") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"canada.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.LYD) {
             /**
              * LIBYA
              */
-            imageLocation = imageLocation.replace("countryname", "libya") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"libya.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.BND) {
             /**
              * BRUNEI
              */
-            imageLocation = imageLocation.replace("countryname", "brunei") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"brunei.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.SGD) {
             /**
              * SINGAPORE
              */
-            imageLocation = imageLocation.replace("countryname", "singapore") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"singapore.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.BRL) {
             /**
              * BRAZIL
              */
-            imageLocation = imageLocation.replace("countryname", "brazil") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"brazil.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.ILS) {
             /**
              * ISREAL
              */
-            imageLocation = imageLocation.replace("countryname", "isreal") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"isreal.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.RUB) {
             /**
              * RUSSIA
              */
-            imageLocation = imageLocation.replace("countryname", "russia") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"russia.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.GHS) {
             /**
              * GHANA
              */
-            imageLocation = imageLocation.replace("countryname", "ghana") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"ghana.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.TRY) {
             /**
              * TURKEY
              */
-            imageLocation = imageLocation.replace("countryname", "turkey") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"turkey.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.NZD) {
             /**
              * NEW ZEALAND
              */
-            imageLocation = imageLocation.replace("countryname", "new_zealand") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"new_zealand.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.CHF) {
             /**
              * SWITZERLAND
              */
-            imageLocation = imageLocation.replace("countryname", "switzerland") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"switzerland.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.KYD) {
             /**
              * CAYMAN
              */
-            imageLocation = imageLocation.replace("countryname", "cayman") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"cayman.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.LVL) {
             /**
              * LATVIA
              */
-            imageLocation = imageLocation.replace("countryname", "latvia") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"latvia.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         } else if (currency == Currency.JOD) {
             /**
              * JORDAN
              */
-            imageLocation = imageLocation.replace("countryname", "jordan") ;
-            Glide.with(context).load(imageLocation).into(imageView);
+            String nimageurl = imageurl+"jordan.png" ;
+            Glide.with(context).load(nimageurl).into(imageView);
         }
     }
 
