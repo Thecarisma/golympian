@@ -1,8 +1,10 @@
 package gig.library.golympian.views;
 
 import android.app.Activity;
+import android.content.Context;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -95,6 +97,113 @@ public class LightView {
             ((EditText) activity.findViewById(id)).setText(text);
         }
 
+    }
+
+    public void setBackgroundColor(View[] id, int color) {
+        if (activity != null) {
+            for (View i : id) {
+                setBackgroundColor(i.getId(), color, activity);
+            }
+        } else if (view != null) {
+            for (View i : id) {
+                setBackgroundColor(i.getId(), color, view);
+            }
+        }
+    }
+
+    //TODO:to add context too along with activity and view
+    public void setBackgroundColor(View id, int color, Context context) {
+        id.setBackgroundColor(context.getResources().getColor(color));
+    }
+
+    public void setBackgroundColor(int id, int color) {
+        if (activity != null) {
+            setBackgroundColor(id, color, activity);
+        } else if (view != null) {
+            setBackgroundColor(id, color, view);
+        }
+    }
+
+    public void setBackgroundColor(int id, int color, Activity activity) {
+        activity.findViewById(id).setBackgroundColor(activity.getResources().getColor(color));
+    }
+
+    public void setBackgroundColor(int id, int color, View view) {
+        view.findViewById(id).setBackgroundColor(view.getResources().getColor(color));
+    }
+
+    public void setBackgroundColor(int[] id, int color) {
+        if (activity != null) {
+            setBackgroundColor(id, color, activity);
+        } else if (view != null) {
+            setBackgroundColor(id, color, view);
+        }
+    }
+
+    public void setBackgroundColor(int[] id, int color, Activity activity) {
+        for (int i : id) {
+            activity.findViewById(i).setBackgroundColor(activity.getResources().getColor(color));
+        }
+    }
+
+    public void setBackgroundColor(int[] id, int color, View view) {
+        for (int i : id) {
+            view.findViewById(i).setBackgroundColor(view.getResources().getColor(color));
+        }
+    }
+
+    public void setTextColor(int id, int color) {
+        if (activity != null) {
+            setTextColor(id, color, activity);
+        } else if (view != null) {
+            setTextColor(id, color, view);
+        }
+    }
+
+    public void setTextColor(int id, int color, Activity activity) {
+        if (activity.findViewById(id) instanceof TextView) {
+            ((TextView) activity.findViewById(id)).setTextColor(activity.getResources().getColor(color));
+        } else if (activity.findViewById(id) instanceof EditText) {
+            ((EditText) activity.findViewById(id)).setTextColor(activity.getResources().getColor(color));
+        }
+    }
+
+    public void setTextColor(int id, int color, View view) {
+        if (view.findViewById(id) instanceof TextView) {
+            ((TextView) view.findViewById(id)).setTextColor(view.getResources().getColor(color));
+        } else if (view.findViewById(id) instanceof EditText) {
+            ((EditText) view.findViewById(id)).setTextColor(view.getResources().getColor(color));
+        } else if (view.findViewById(id) instanceof Button) {
+            ((Button) view.findViewById(id)).setTextColor(view.getResources().getColor(color));
+        }
+    }
+
+    public void setTextColor(int[] id, int color) {
+        if (activity != null) {
+            setTextColor(id, color, activity);
+        } else if (view != null) {
+            setTextColor(id, color, view);
+        }
+    }
+
+    public void setTextColor(int[] ids, int color, Activity activity) {
+        for (int id : ids) {
+            if (activity.findViewById(id) instanceof TextView) {
+                ((TextView) activity.findViewById(id)).setTextColor(activity.getResources().getColor(color));
+            } else if (activity.findViewById(id) instanceof EditText) {
+                ((EditText) activity.findViewById(id)).setTextColor(activity.getResources().getColor(color));
+            }
+        }
+    }
+
+    public void setTextColor(int[] ids, int color, View view) {
+        for (int id : ids) {
+            if (view.findViewById(id) instanceof TextView) {
+                ((TextView) view.findViewById(id)).setTextColor(view.getResources().getColor(color));
+            } else if (view.findViewById(id) instanceof EditText) {
+                ((EditText) view.findViewById(id)).setTextColor(view.getResources().getColor(color));
+            }
+        }
     }
 
     public void loadImage(ImageView imgView, String url) {
