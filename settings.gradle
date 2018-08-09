@@ -1,1 +1,1 @@
-include ':app', ':golympian', ':awonapi'
+include ':library'
