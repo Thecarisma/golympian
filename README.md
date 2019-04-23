@@ -17,7 +17,7 @@ theme.setTheme(Theme.Themes.REDFIRE);
 ```
 The screen shots of the first eight themes are shown below
 
-![themes_screenshots](https://github.com/golympian/goandroid/blob/master/images/themes.png)
+![themes_screenshots](https://raw.githubusercontent.com/Thecarisma/golympian/master/images/themes.png)
 
 [read more about themes](https://github.com/golympian/goandroid/wiki/Adding-Theme-And-Finetuning-Your-Android-application)
 
